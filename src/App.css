@@ -1,0 +1,96 @@
+.App {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    background-image: url('/images/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(184, 208, 252, 0.7);
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, 1f);
+
+
+}
+
+.card__header,
+.card__footer,
+.card__temp {
+    grid-column: span 2;
+
+}
+
+.card__title {
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+.card__subtitle {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.card__temp {
+    text-align: center;
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.card__info {
+    padding-top: 20px;
+}
+
+.card__description {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.card__footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card__list {
+    display: grid;
+    gap: 8px;
+
+}
+
+.card__item {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card__btn {
+    padding: 0.5em 1em;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(64, 131, 255, 0.7);
+    color: white;
+    box-shadow: 1px 1px 10px rgba(1, 42, 117, 0.7);
+    transition: transform 100ms ease;
+}
+
+.card__btn:hover {
+    transform: scale(1.04);
+}
+
+.card__btn:active {
+    transform: scale(1);
+    box-shadow: 1px 1px 5px rgba(1, 42, 117, 0.7);
+}
